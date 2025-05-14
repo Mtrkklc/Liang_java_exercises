@@ -1,4 +1,4 @@
-package Liang;
+package Liang.Chapter3;
 
 public class RandomMonth_34 {
     public static void main(String[] args) {

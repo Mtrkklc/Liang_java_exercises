@@ -1,4 +1,4 @@
-package Liang;
+package Liang.Chapter3;
 
 import java.util.Scanner;
 

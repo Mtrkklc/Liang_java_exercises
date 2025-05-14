@@ -1,4 +1,4 @@
-package Liang;
+package Liang.Chapter2;
 import java.util.Scanner;
 
 public class FinancialApplication_25 {

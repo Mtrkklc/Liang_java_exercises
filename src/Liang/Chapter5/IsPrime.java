@@ -1,4 +1,4 @@
-package Liang;
+package Liang.Chapter5;
 
 public class IsPrime {
     public static void main(String[] args) {

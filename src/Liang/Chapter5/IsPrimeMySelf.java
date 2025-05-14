@@ -1,4 +1,4 @@
-package Liang;
+package Liang.Chapter5;
 
 public class IsPrimeMySelf {
     public static void main(String[] args) {
