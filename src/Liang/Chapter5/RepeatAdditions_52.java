@@ -2,7 +2,7 @@ package Liang.Chapter5;
 
 import java.util.Scanner;
 
-public class repeatAdditions_52 {
+public class RepeatAdditions_52 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int count = 0;
