@@ -31,4 +31,25 @@ public class RepeatAdditions_52 {
         System.out.println("Geçen Süre: " + elapsedTime);
 
     }
+
+    public static class ComputeE_526 {
+        public static void main(String[] args) {
+            double factoriel= 1;
+            double term1 = 10_000;
+            double term2 = 20_000;
+            double term3 = 100_000;
+            double result= 1;
+
+
+            //factoriel hesaplama
+            for (int i = 1; i <= term2; i++) {
+                factoriel *= i;
+                result += (1.0/factoriel);
+            }
+            System.out.println("Term-2 için Sonuc: " + result);
+
+
+
+        }
+    }
 }
