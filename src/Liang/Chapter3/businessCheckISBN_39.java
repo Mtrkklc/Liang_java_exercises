@@ -13,30 +13,29 @@ public class businessCheckISBN_39 {
         int firstDigit = 1;
         temp = isbn;
 
-        for (int i=9; i>0; i--){
-           isbnMod = temp % 10;
-           checkSum += (isbnMod * i);
-           temp /= 10;
-           if (i == 1){
-               firstDigit = isbnMod *i;
-           }
+        for (int i = 9; i > 0; i--) {
+            isbnMod = temp % 10;
+            checkSum += (isbnMod * i);
+            temp /= 10;
+            if (i == 1) {
+                firstDigit = isbnMod * i;
+            }
         }
         lastDigit = checkSum % 11;
 
-        if (firstDigit == 0){
+        if (firstDigit == 0) {
             if (lastDigit == 10) {
-                System.out.print("The ISBN-10 number is: "+ "0" + isbn + "X");
-            }else {
-                System.out.printf("The ISBN-10 number is: " + "0" + isbn +"" +lastDigit);
+                System.out.print("The ISBN-10 number is: " + "0" + isbn + "X");
+            } else {
+                System.out.printf("The ISBN-10 number is: " + "0" + isbn + "" + lastDigit);
             }
         } else {
             if (lastDigit == 10) {
                 System.out.print("The ISBN-10 number is: " + isbn + "X");
-            }else {
-                System.out.printf("The ISBN-10 number is: "+ isbn +"" +lastDigit);
+            } else {
+                System.out.printf("The ISBN-10 number is: " + isbn + "" + lastDigit);
             }
         }
-
 
 
     }
