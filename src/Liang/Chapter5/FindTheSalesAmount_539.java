@@ -14,7 +14,7 @@ public class FindTheSalesAmount_539 {
             }else if(sales<=1000){
                 comission = 5000 * 0.08 + (sales-5000)*0.10;
             }else {
-                comission = 5000 * 0.08 + 5000 * 0.10 + (sales-5000)*0.12;
+                comission = 5000 * 0.08 + 5000 * 0.10 + (sales-10000)*0.12;
             }
             if(comission >= goal){
                 break;
