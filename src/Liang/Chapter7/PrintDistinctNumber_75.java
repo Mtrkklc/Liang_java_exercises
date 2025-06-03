@@ -4,30 +4,38 @@ import java.util.Scanner;
 
 public class PrintDistinctNumber_75 {
     public static void main(String[] args) {
-        int[] numberList = new int[10];
-        int[] distinctList = new int[10];
         Scanner input = new Scanner(System.in);
-        int number;
-        int distinct = 0;
 
-        for (int i = 0; i < numberList.length; i++) {
-            System.out.println("Enter an integer: ");
-            number = input.nextInt();
-            for (int j = 0; j < numberList.length; j++) {
-                if (numberList[j] != number) {
-                    numberList[j] = number;
-                    distinct++;
-                    distinctList[j] = number;
+        int[] distinctNumbers = new int[10]; // En fazla 10 farklı sayı olabilir
+        int count = 0; // Kaç farklı sayı olduğunu tutar
+
+        System.out.print("Enter ten numbers: ");
+
+        for (int i = 0; i < 10; i++) {
+            int number = input.nextInt();
+
+            boolean isExist = false;
+
+            for (int j = 0; j < count; j++) {
+                if (distinctNumbers[j] == number) {
+                    isExist = true;
                     break;
                 }
+            }
+            if (!isExist) {
+                distinctNumbers[count] = number;
+                count++;
             }
 
         }
 
-        for (int i = 0; i < distinctList.length; i++) {
-            System.out.print(distinctList[i] + " ");
+
+        // Çıktılar
+        System.out.println("The number of distinct numbers is " + count);
+        System.out.print("The distinct numbers are: ");
+        for (int i = 0; i < count; i++) {
+            System.out.print(distinctNumbers[i] + " ");
         }
-
     }
-
 }
+
